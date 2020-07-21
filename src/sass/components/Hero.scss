@@ -1,0 +1,24 @@
+.hero {
+  max-height: 100vh;
+  background-image: url("../assets/images/jpg/hero.jpg");
+  background-size: cover;
+  background-position: center center;
+
+  background-repeat: no-repeat;
+  
+
+  
+  
+
+  &_fadeBottom {
+    height: 10rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(243, 243, 243, 0.983),
+      white
+    );
+    margin-top: 40em;
+    
+  }
+}

@@ -1,0 +1,18 @@
+@import "../assets/fonts/fonts.scss";
+
+.footer {
+  background-color: #2a2a2a;
+  height: 10em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_links {
+    display: flex;
+
+    &_icon{
+        margin-right: 10px;
+    }
+  }
+}
