@@ -1,5 +1,7 @@
 import React from "react";
 
+import '../../sass/main.scss';
+
 import new1 from "../../sass/assets/images/jpg/new1.jpg";
 import new2 from "../../sass/assets/images/jpg/new2.jpg";
 import new3 from "../../sass/assets/images/jpg/new3.jpg";

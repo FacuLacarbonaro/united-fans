@@ -1,0 +1,15 @@
+const initialState = {
+  players: [],
+};
+
+ function rootReducer(state = initialState, action) {
+  switch (action.type) {
+    case "GET_PLAYERS": {
+      return { ...state, players: action.payload };
+    }
+
+    default: {
+      return state;
+    }
+  }
+}

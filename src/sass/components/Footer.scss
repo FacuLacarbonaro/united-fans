@@ -10,9 +10,21 @@
 
   &_links {
     display: flex;
+    
 
     &_icon{
-        margin-right: 10px;
+        margin-right: 30px;
+        color: #fff;
+        background-color: gray;
+        padding: 15px;
+        border-radius: 50%;
+
+        &:hover {
+          background-color: red;
+          transition: .3s ease-in-out;
+        }
+        
+        
     }
   }
 }

@@ -1,4 +1,4 @@
-@import '../assets/fonts/fonts.scss';
+@import "../assets/fonts/fonts.scss";
 
 .nav {
   display: flex;
@@ -15,7 +15,6 @@
   z-index: 1;
   position: fixed;
 
-
   &_logo {
     color: white;
     height: 40px;
@@ -31,7 +30,13 @@
       margin-left: 20px;
       text-decoration: none;
       font-family: $font-heading;
+      font-weight: 600;
+      font-size: 1.2em;
 
+      &:hover {
+        color: red;
+        transition: all 1s ease;
+      }
     }
   }
 }
