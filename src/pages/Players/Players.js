@@ -1,14 +1,11 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import CardPlayer from "../../components/CardPlayer/CardPlayer";
 
 import "../../sass/main.scss";
 
 const Players = (obj) => {
-/*   const playerList = useSelector((state) => state.playerList);
-  const managerList = useSelector((state) => state.managerList); */
-
   const dispatch = useDispatch();
 
   useEffect(() => {

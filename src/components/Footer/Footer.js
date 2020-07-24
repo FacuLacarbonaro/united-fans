@@ -8,14 +8,14 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer_links">
+      <div className="footer_socialLinks">
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.instagram.com/manchesterunited/"
         >
           <InstagramIcon
-            className="footer_links_icon"
+            className="footer_socialLinks_links_icon"
             style={{ fontSize: 35 }}
           />
         </a>
@@ -24,14 +24,14 @@ const Footer = () => {
           rel="noopener noreferrer"
           href="https://twitter.com/ManUtd"
         >
-          <TwitterIcon className="footer_links_icon" style={{ fontSize: 35 }} />
+          <TwitterIcon className="footer_socialLinks_links_icon" style={{ fontSize: 35 }} />
         </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.youtube.com/manutd"
         >
-          <YouTubeIcon className="footer_links_icon" style={{ fontSize: 35 }} />
+          <YouTubeIcon className="footer_socialLinks_links_icon" style={{ fontSize: 35 }} />
         </a>
         <a
           target="_blank"
@@ -39,7 +39,7 @@ const Footer = () => {
           href="https://www.facebook.com/manchesterunited"
         >
           <FacebookIcon
-            className="footer_links_icon"
+            className="footer_socialLinks_links_icon"
             style={{ fontSize: 35 }}
           />
         </a>

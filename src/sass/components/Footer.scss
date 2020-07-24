@@ -8,11 +8,11 @@
   align-items: center;
   justify-content: center;
 
-  &_links {
-    display: flex;
-    
+  &_socialLinks {
+    &_links {
+      display: flex;
 
-    &_icon{
+      &_icon {
         margin-right: 30px;
         color: #fff;
         background-color: gray;
@@ -21,10 +21,9 @@
 
         &:hover {
           background-color: red;
-          transition: .3s ease-in-out;
+          transition: 0.3s ease-in-out;
         }
-        
-        
+      }
     }
   }
 }

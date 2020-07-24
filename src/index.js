@@ -8,7 +8,7 @@ import { createStore } from "redux";
 
 const initialState = {
   playerList: [],
-  managerList: []
+  managerList: [],
 };
 
 const store = createStore(reducer, initialState);
@@ -21,11 +21,11 @@ function reducer(state, action) {
         playerList: action.payload,
       };
     }
-    case 'SET_MANAGER_LIST' : {
+    case "SET_MANAGER_LIST": {
       return {
         ...state,
-        managerList: action.payload
-      }
+        managerList: action.payload,
+      };
     }
     default: {
       return state;

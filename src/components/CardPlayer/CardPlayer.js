@@ -11,43 +11,124 @@ const CardPlayer = ({ state }) => {
     (item) => item.position === "Defender"
   );
 
-  /* console.log(filteredGoalkeepers); */
+  const filteredMidfielders = state.filter(
+    (item) => item.position === "Midfielder"
+  );
+
+  const filteredFowards = state.filter((item) => item.position === "Foward");
 
   return (
-    <div className="cardPlayer">
-      <div className="cardPlayerList">
+    <div className="CardPlayer">
+      <div className="CardPlayer_list_title">
+        <h1> Goalkeepers </h1>
+      </div>
+      <div className="CardPlayer_list">
         {filteredGoalkeepers.map((band) => (
-          <div className="cardPlayerList_item">
-            <h2 className="cardPlayerList_item_name">
-              {band.first_name}, {band.last_name}
-            </h2>
-
-            <h3 className="cardPlayerList_item_position">{band.position}</h3>
-
-            <div className="cardPlayerList_item_img">
-              <img src={band.image} alt="" />
+          <div className="CardPlayer_list_item goalkeeper">
+            <div className="CardPlayer_list_item_img">
+              <div
+                style={{
+                  backgroundImage: `url(${band.image})`,
+                }}
+                alt=""
+              >
+                <div className="CardPlayer_list_item_img_info">
+                  <p className="CardPlayer_list_item_img_info_number">
+                    {band.number}
+                  </p>
+                  <p className="CardPlayer_list_item_img_info_name">
+                    {band.first_name}, <br /> {band.last_name}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         ))}
       </div>
-      
-      <div className="cardPlayerList2">
+
+      <div className="CardPlayer_list_title">
+        <h1> Defenders </h1>
+      </div>
+
+      <div className="CardPlayer_list">
         {filteredDefenders.map((band) => (
-          <div className="cardPlayerList2_item">
-            <h2 className="cardPlayerList2_item_name">
-              {band.first_name}, {band.last_name}
-            </h2>
-
-            <h3 className="cardPlayerList2_item_position">{band.position}</h3>
-
-            <div className="cardPlayerList2_item_img">
-              <img src={band.image} alt="" />
+          <div className="CardPlayer_list_item goalkeeper">
+            <div className="CardPlayer_list_item_img">
+              <div
+                style={{
+                  backgroundImage: `url(${band.image})`,
+                }}
+                alt=""
+              >
+                <div className="CardPlayer_list_item_img_info">
+                  <p className="CardPlayer_list_item_img_info_number">
+                    {band.number}
+                  </p>
+                  <p className="CardPlayer_list_item_img_info_name">
+                    {band.first_name}, <br /> {band.last_name}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         ))}
       </div>
 
-      
+      <div className="CardPlayer_list_title">
+        <h1> Midfielders </h1>
+      </div>
+
+      <div className="CardPlayer_list">
+        {filteredMidfielders.map((band) => (
+          <div className="CardPlayer_list_item goalkeeper">
+            <div className="CardPlayer_list_item_img">
+              <div
+                style={{
+                  backgroundImage: `url(${band.image})`,
+                }}
+                alt=""
+              >
+                <div className="CardPlayer_list_item_img_info">
+                  <p className="CardPlayer_list_item_img_info_number">
+                    {band.number}
+                  </p>
+                  <p className="CardPlayer_list_item_img_info_name">
+                    {band.first_name}, <br /> {band.last_name}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="CardPlayer_list_title">
+        <h1> Fowards </h1>
+      </div>
+
+      <div className="CardPlayer_list">
+        {filteredFowards.map((band) => (
+          <div className="CardPlayer_list_item goalkeeper">
+            <div className="CardPlayer_list_item_img">
+              <div
+                style={{
+                  backgroundImage: `url(${band.image})`,
+                }}
+                alt=""
+              >
+                <div className="CardPlayer_list_item_img_info">
+                  <p className="CardPlayer_list_item_img_info_number">
+                    {band.number}
+                  </p>
+                  <p className="CardPlayer_list_item_img_info_name">
+                    {band.first_name}, <br /> {band.last_name}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

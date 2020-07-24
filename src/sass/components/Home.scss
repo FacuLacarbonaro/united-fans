@@ -1,16 +1,19 @@
 .home {
+  
   &_container {
     padding-top: 100px;
+    background-color: rgb(241, 239, 239);
 
     &_news {
       margin-top: 2em;
       justify-content: space-around;
+      
 
       &_title {
         text-align: center;
         margin-bottom: 50px;
         font-family: $font-heading;
-        font-size: 2em;
+        font-size: 1.3em;
         display: flex;
         justify-content: center;
 
@@ -62,7 +65,7 @@
       &_title{
         text-align: center;
         font-weight: 600;
-        font-size: 2em;
+        font-size: 1.3em;
         font-family: $font-heading;
         margin-bottom: 2em;
 
@@ -77,7 +80,9 @@
 
       &_row {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
       }
 
     }
