@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
+
 import CardPlayer from "../../components/CardPlayer/CardPlayer";
 
 import "../../sass/main.scss";
 
-const Players = (obj) => {
+const Players = () => {
   const dispatch = useDispatch();
+  
 
   useEffect(() => {
     fetch("https://united-fans.firebaseio.com/.json")

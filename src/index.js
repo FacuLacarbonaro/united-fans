@@ -9,6 +9,7 @@ import { createStore } from "redux";
 const initialState = {
   playerList: [],
   managerList: [],
+  nextMatch: []
 };
 
 const store = createStore(reducer, initialState);
@@ -25,6 +26,12 @@ function reducer(state, action) {
       return {
         ...state,
         managerList: action.payload,
+      };
+    }
+    case "SET_NEXT_MATCH": {
+      return {
+        ...state,
+        nextMatch: action.payload,
       };
     }
     default: {
