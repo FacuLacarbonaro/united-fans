@@ -1,0 +1,58 @@
+.cardPlayerList {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 328px 328px 328px 328px;
+  grid-template-rows: 328px ;
+  grid-gap: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+
+  &_item {
+    height: 328px;
+    width: 328px;
+    margin-top: 100px;
+    margin-left: 40px;
+    
+
+    &_img {
+      z-index: 0;
+      
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.cardPlayerList2 {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 328px 328px 328px 328px ;
+  grid-template-rows: 328px 328px 328px 328px;
+  grid-gap: 80px;
+
+  &_item {
+    height: 328px;
+    width: 328px;
+    margin-top: 100px;
+    margin-left: 40px;
+
+    &_img {
+      z-index: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+}

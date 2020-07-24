@@ -1,46 +1,41 @@
 import React, { useEffect } from "react";
-/* import axios from 'axios';
- */
+import { useSelector, useDispatch } from "react-redux";
+
+import CardPlayer from "../../components/CardPlayer/CardPlayer";
 
 import "../../sass/main.scss";
-import { useDispatch, useSelector } from "react-redux";
 
-const Players = () => {
-  const playerList = useSelector((state) => state.players);
+const Players = (obj) => {
+/*   const playerList = useSelector((state) => state.playerList);
+  const managerList = useSelector((state) => state.managerList); */
+
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch(
-      "https://api-football-v1.p.rapidapi.com/v2/players/squad/33/2018-2019",
-      {
-        method: "GET",
-        headers: {
-          "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
-          "x-rapidapi-key":
-            "9fa06fdc65msh57ea1eb5864aecdp1951d3jsn2646e6d4abf9",
-        },
-      }
-    )
+    fetch("https://united-fans.firebaseio.com/.json")
       .then((response) => {
         return response.json();
       })
-
-      .then((response) => {
+      .then((data) => {
         dispatch({
-          type: "GET_PLAYERS",
-          payload: [response]
-        })
-        console.log(response);
+          type: "SET_PLAYERS_LIST",
+          payload: data.players,
+        });
+        dispatch({
+          type: "SET_MANAGER_LIST",
+          payload: data.manager,
+        });
       })
-
       .catch(() => {
         console.log("Error");
       });
   }, [dispatch]);
 
-  return (<div className='players' >
-    IMPRIMIR API
-  </div>);
+  return (
+    <div className="players">
+      <CardPlayer />
+    </div>
+  );
 };
 
 export default Players;
