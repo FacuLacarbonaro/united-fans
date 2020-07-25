@@ -9,7 +9,7 @@ import { createStore } from "redux";
 const initialState = {
   playerList: [],
   managerList: [],
-  nextMatch: []
+  nextMatch: [],
 };
 
 const store = createStore(reducer, initialState);

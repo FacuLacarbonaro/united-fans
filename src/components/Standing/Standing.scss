@@ -1,0 +1,124 @@
+@import "../../sass/assets/fonts/fonts.scss";
+@import "../../sass/assets/colors/colors.scss";
+
+.standing {
+  width: 100%;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  padding: 2em;
+  background-color: $backgroundColor-lightGray;
+
+  h2{
+      text-align: center;
+      margin-bottom: 1em;
+      font-family: $font-heading;
+  }
+
+  &_list {
+    &_category {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 50px 50px 120px 80px 50px 50px 50px 90px 50px 120px;
+      grid-auto-rows: 1fr;
+      grid-template-areas: "rank logo name played win draw lose goalsDif points qualification ";
+      font-size: 13px;
+      font-family: $font-body;
+
+      border-bottom: 1.4px solid rgb(190, 183, 183);
+      margin: 10px;
+
+      &_rank {
+        grid-area: rank;
+      }
+
+      &_logo {
+        grid-area: logo;
+      }
+
+      &_name {
+        grid-area: name;
+      }
+
+      &_played {
+        grid-area: played;
+      }
+
+      &_win {
+        grid-area: win;
+      }
+
+      &_draw {
+        grid-area: draw;
+      }
+
+      &_lose {
+        grid-area: lose;
+      }
+
+      &_goalsDif {
+        grid-area: goalsDif;
+      }
+      &_points {
+        grid-area: points;
+      }
+      &_qualification {
+        grid-area: qualification;
+      }
+    }
+
+    &_team {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 50px 50px 120px 80px 50px 50px 50px 90px 50px 120px;
+      grid-auto-rows: 1fr;
+      grid-template-areas: "rank_team logo_team name_team played_team win_team draw_team lose_team goalsDif_team points_team qualification_team";
+
+      font-size: 13px;
+      font-family: $font-body;
+
+      border-bottom: 1.4px solid rgb(190, 183, 183);
+      margin: 10px;
+
+      &_rank {
+        grid-area: rank_team;
+      }
+
+      &_logo {
+        grid-area: logo_team;
+      }
+
+      &_name {
+        grid-area: name_team;
+      }
+
+      &_played {
+        grid-area: played_team;
+      }
+
+      &_win {
+        grid-area: win_team;
+      }
+
+      &_draw {
+        grid-area: draw_team;
+      }
+
+      &_lose {
+        grid-area: lose_team;
+      }
+
+      &_goalsDif {
+        grid-area: goalsDif_team;
+      }
+      &_points {
+        grid-area: points_team;
+      }
+      &_qualification {
+        grid-area: qualification_team;
+      }
+    }
+  }
+}

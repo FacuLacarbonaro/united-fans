@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "../../sass/main.scss";
+import "./Nav.scss";
 
 import logo from "../../sass/assets/images/png/logo.png";
 

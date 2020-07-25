@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
-import "../../sass/main.scss";
+import "./Fixture.scss";
 import NextMatch from "../../components/NextMatch/NextMatch";
+import Standing from "../../components/Standing/Standing";
 
 const Fixture = () => {
   const dispatch = useDispatch();
-
+/* 
   useEffect(() => {
     fetch(
       "https://api-football-v1.p.rapidapi.com/v2/fixtures/team/33/next/10",
@@ -31,11 +32,12 @@ const Fixture = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, [dispatch]);
+  }, [dispatch]); */
 
   return (
     <div className="fixture">
       <NextMatch />
+      <Standing/>
     </div>
   );
 };

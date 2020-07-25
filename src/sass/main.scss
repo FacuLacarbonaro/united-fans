@@ -1,16 +1,4 @@
-@import './components/Nav.scss';
-@import './components/Hero.scss';
-@import './components/Home.scss';
-@import './components/CardNews.scss';
-@import './components/CardShop.scss';
-@import './components/Footer.scss';
-@import './components/Players.scss';
-@import './components/CardPlayer.scss';
-@import './components/Fixture.scss';
-@import './components/NextMatch.scss';
-
-
-
+@import './assets/colors/colors.scss';
 
 *{
     margin: 0;
@@ -18,6 +6,6 @@
 }
 
 body{
-    background-color: rgb(241, 239, 239);
+    background-color: $backgroundColor-lightGray;
 }
 

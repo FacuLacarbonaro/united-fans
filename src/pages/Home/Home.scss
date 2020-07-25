@@ -1,8 +1,11 @@
+@import '../../sass/assets/fonts/fonts.scss';
+@import '../../sass/assets/colors/colors.scss';
+
 .home {
   
   &_container {
     padding-top: 100px;
-    background-color: rgb(241, 239, 239);
+    background-color: $backgroundColor-lightGray;
 
     &_news {
       margin-top: 2em;
@@ -31,7 +34,7 @@
 
     &_nextMatch {
       height: 60vh;
-      background-image: url("../assets/images/jpg/oldTrafford.jpg");
+      background-image: url("../../sass/assets/images/jpg/oldTrafford.jpg");
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;

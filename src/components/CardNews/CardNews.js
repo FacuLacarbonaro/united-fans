@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './CardNews.scss';
+
 const Card = ({title, description, img}) => {
     return ( 
         <div className="card">

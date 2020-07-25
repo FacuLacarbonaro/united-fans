@@ -1,5 +1,7 @@
 import React from "react";
 
+import './CardShop.scss';
+
 const CardShop = ({ img, title }) => {
   return (
     <div className="cardShop">

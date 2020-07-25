@@ -4,13 +4,13 @@ import { useDispatch } from "react-redux";
 
 import CardPlayer from "../../components/CardPlayer/CardPlayer";
 
-import "../../sass/main.scss";
+import "./Players.scss";
 
 const Players = () => {
   const dispatch = useDispatch();
   
 
-  useEffect(() => {
+  /* useEffect(() => {
     fetch("https://united-fans.firebaseio.com/.json")
       .then((response) => {
         return response.json();
@@ -28,7 +28,7 @@ const Players = () => {
       .catch(() => {
         console.log("Error");
       });
-  }, [dispatch]);
+  }, [dispatch]); */
 
   return (
     <div className="players">

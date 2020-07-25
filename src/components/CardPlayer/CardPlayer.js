@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import "../../sass/main.scss";
+import "./CardPlayer.scss";
 
 const CardPlayer = ({ state }) => {
   const filteredGoalkeepers = state.filter(
@@ -23,21 +23,21 @@ const CardPlayer = ({ state }) => {
         <h1> Goalkeepers </h1>
       </div>
       <div className="CardPlayer_list">
-        {filteredGoalkeepers.map((band) => (
+        {filteredGoalkeepers.map((player) => (
           <div className="CardPlayer_list_item goalkeeper">
             <div className="CardPlayer_list_item_img">
               <div
                 style={{
-                  backgroundImage: `url(${band.image})`,
+                  backgroundImage: `url(${player.image})`,
                 }}
                 alt=""
               >
                 <div className="CardPlayer_list_item_img_info">
                   <p className="CardPlayer_list_item_img_info_number">
-                    {band.number}
+                    {player.number}
                   </p>
                   <p className="CardPlayer_list_item_img_info_name">
-                    {band.first_name}, <br /> {band.last_name}
+                    {player.first_name}, <br /> {player.last_name}
                   </p>
                 </div>
               </div>
@@ -51,21 +51,21 @@ const CardPlayer = ({ state }) => {
       </div>
 
       <div className="CardPlayer_list">
-        {filteredDefenders.map((band) => (
+        {filteredDefenders.map((player) => (
           <div className="CardPlayer_list_item goalkeeper">
             <div className="CardPlayer_list_item_img">
               <div
                 style={{
-                  backgroundImage: `url(${band.image})`,
+                  backgroundImage: `url(${player.image})`,
                 }}
                 alt=""
               >
                 <div className="CardPlayer_list_item_img_info">
                   <p className="CardPlayer_list_item_img_info_number">
-                    {band.number}
+                    {player.number}
                   </p>
                   <p className="CardPlayer_list_item_img_info_name">
-                    {band.first_name}, <br /> {band.last_name}
+                    {player.first_name}, <br /> {player.last_name}
                   </p>
                 </div>
               </div>
@@ -79,21 +79,21 @@ const CardPlayer = ({ state }) => {
       </div>
 
       <div className="CardPlayer_list">
-        {filteredMidfielders.map((band) => (
+        {filteredMidfielders.map((player) => (
           <div className="CardPlayer_list_item goalkeeper">
             <div className="CardPlayer_list_item_img">
               <div
                 style={{
-                  backgroundImage: `url(${band.image})`,
+                  backgroundImage: `url(${player.image})`,
                 }}
                 alt=""
               >
                 <div className="CardPlayer_list_item_img_info">
                   <p className="CardPlayer_list_item_img_info_number">
-                    {band.number}
+                    {player.number}
                   </p>
                   <p className="CardPlayer_list_item_img_info_name">
-                    {band.first_name}, <br /> {band.last_name}
+                    {player.first_name}, <br /> {player.last_name}
                   </p>
                 </div>
               </div>
